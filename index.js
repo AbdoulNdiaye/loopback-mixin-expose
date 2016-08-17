@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./dist/expose');
+module.exports = require('./dist');
