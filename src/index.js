@@ -1,7 +1,7 @@
 import { deprecate } from 'util';
-import MethodExposition from './MethodExposition';
+import Expose from './expose';
 
 export default deprecate(
-  app => app.loopback.modelBuilder.mixins.define('MethodExposition', MethodExposition),
-  'DEPRECATED: Use mixinSources, see https://github.com/oktapodia/loopback-mixin-method-exposition#mixinsources'
+  app => app.loopback.modelBuilder.mixins.define('Expose', Expose),
+  'DEPRECATED: Use mixinSources, see https://github.com/oktapodia/loopback-mixin-expose#mixinsources'
 );
