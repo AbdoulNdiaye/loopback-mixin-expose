@@ -4,7 +4,7 @@ import ModelDefinition from 'loopback-datasource-juggler/lib/model-definition';
 import debugModule from 'debug';
 const debug = debugModule('disable-all-methods-mixin');
 
-export default function (Model: ModelDefinition, options: {}) {
+export default (Model: ModelDefinition, options: {}) => {
   if (Model && Model.sharedClass) {
     const methodsToExpose = options.methods || [];
     const methods = Model.sharedClass.methods();
